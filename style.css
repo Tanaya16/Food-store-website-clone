@@ -1,0 +1,395 @@
+@import url("https://use.typekit.net/mty6pgz.css");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: montserrat,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*HEADER-NAVBAR*/
+
+header{
+    position: sticky;
+    top: 0;
+    border-bottom: solid gray 1px;
+}
+
+.navbar{
+    /* border: solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(255, 253, 239);
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-left{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: solid rgb(12, 87, 33); */
+}
+
+.navbar-logo{
+    /* border: solid rgb(255, 149, 0); */
+    cursor: pointer;
+}
+
+.logo-a{
+    text-decoration: none;
+    color: black;
+}
+
+.navabr-logo-icon{
+    height: 3rem;
+    /* border: solid rgb(255, 157, 0); */
+}
+
+.navbar-menu{
+    /* border: solid rgb(0, 255, 8); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+.navbar-links{
+    /* border: solid rgb(255, 242, 0); */
+    list-style: none;
+}
+
+.link-a{
+    text-decoration: none;
+    color: black;
+}
+
+.link-a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.navbar-links button{
+    padding: 0.3rem 0.6rem;
+    background-color: rgb(255, 253, 239);
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid #ff9b54 1px;
+    /* border: solid rgb(255, 246, 150); */
+    
+}
+
+.navbar-links button:hover{
+    background-color: #ff7d00;
+    border: solid #ff7d00 1px;
+    transition: 0.2s ease-in;
+}
+
+.btn-a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar-menu{
+        margin-top: 1rem;
+    }
+    
+}
+
+
+/*ARTICLE*/
+
+article{
+    /* border: solid red; */
+    text-align: center;
+    background-image: url(img1.1.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-title{
+    /* border: solid orange; */
+    color: white;
+    font-size: 1.5rem;
+}
+
+.article-logo{
+    color: #c1121f;
+}
+
+/*MENU*/
+
+menu{
+    /* border: solid red; */
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.menu-title{
+    font-weight: 600;
+    /* border: solid rgb(0, 255, 17); */
+    margin: 5rem;
+    font-size: 2.5rem;
+}
+
+
+/*PIZZA SECTION*/
+
+.pizza-section{
+    /* border: solid rgb(69, 69, 172); */
+    margin: 1rem;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pizza-menu{
+    /* border: solid rgb(0, 255, 242); */
+    margin: 1rem;
+    list-style: none;
+    display: none;
+}
+
+#pizza-title{
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: solid #e71d36 1px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #e71d36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#pizza-title:hover{
+    color: #c1121f;
+    background-color: #c7535b4d;
+    transition: 0.3s ease-in;
+}
+#pizza-menu li{
+    font-size: 1.5rem;
+    /* border: solid purple; */
+    margin-top: 2rem;
+}
+
+#pizza-menu p{
+    color: #353535;
+}
+
+.pizza-img{
+    height: 400px;
+    padding: 1rem;
+    /* box-shadow: #132a13 30px 30px; */
+}
+
+.down-icon{
+    height: 30px;
+    margin: 1rem;
+}
+
+
+/*PASTA SECTION*/
+
+.pasta-section{
+    /* border: solid rgb(69, 69, 172); */
+    margin: 1rem;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pasta-menu{
+    /* border: solid rgb(0, 255, 242); */
+    margin: 1rem;
+    list-style: none;
+    display: none;
+}
+
+#pasta-title{
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: solid #4f772d 1px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #4f772d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#pasta-title:hover{
+    color: #132a13;
+    background-color: #7db94853;
+    transition: 0.3s ease-in;
+}
+#pasta-menu li{
+    font-size: 1.5rem;
+    /* border: solid purple; */
+    margin-top: 2rem;
+}
+
+#pasta-menu p{
+    color: #353535;
+}
+
+.pasta-img{
+    height: 400px;
+    padding: 1rem;
+    /* box-shadow: #c1121f 30px 30px; */
+}
+
+@media screen and (max-width:600px){
+    .pizza-img{
+        height: 250px;
+        padding: 2rem;
+        /* box-shadow: #132a13 20px 20px; */
+    }
+    .pasta-img{
+        height: 250px;
+        padding: 2rem;
+        /* box-shadow: #c1121f 20px 20px; */
+    }
+}
+
+
+/*FOOTER*/
+
+footer{
+    margin-top: 10rem;
+    /* border: solid green; */
+    min-height: 9rem;
+    background-image: url(img1.1.png);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left{
+    /* border: solid yellow; */
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.footer-left h2{
+    margin-bottom: 2rem;
+}
+
+.footer-img{
+    height: 30px;
+    margin: .5rem;
+    cursor: pointer;
+}
+
+.footer-img:hover{
+    margin: 0 0.5rem;
+    transition: 0.3s ease-in;
+}
+
+.footer-right{
+    /* border: solid pink; */
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.footer-right h2{
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width:600px){
+    footer{
+        flex-direction: column;
+    }
+    .footer-left{
+        /* border: solid yellow; */
+        padding: .5rem;
+        font-size: 0.8rem;
+    }
+    
+    .footer-left h2{
+        margin-bottom: 1rem;
+    }
+    
+    .footer-img{
+        height: 30px;
+        margin: .5rem;
+    }
+    
+    .footer-right{
+        /* border: solid pink; */
+        padding: .5rem;
+        font-size: 0.8rem;
+    }
+    
+    .footer-right h2{
+        margin-bottom: 1rem;
+    }
+
+    #pizza-title{
+        padding: 0.3rem;
+        font-size: 1.6rem;
+    }
+    #pasta-title{
+        padding: 0.3rem;
+        font-size: 1.6rem;
+    }
+}
+
+
+/*DOWNLOAD*/
+
+download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: solid green; */
+    margin: 10rem;
+}
+
+.download-card{
+    border: solid #ff7d00 1px;
+    text-align: center;
+    width: 50%;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.download-card li{
+    list-style: none;
+    cursor: pointer;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.download-card li:hover{
+    color: #ff7d00;
+    transition: 0.2s ease;
+}
