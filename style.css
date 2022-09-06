@@ -376,7 +376,6 @@ download{
 .download-card{
     border: solid #ff7d00 1px;
     text-align: center;
-    width: 50%;
     padding: 2rem;
     border-radius: 5px;
 }
